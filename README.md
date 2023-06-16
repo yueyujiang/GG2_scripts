@@ -11,7 +11,7 @@ this will give us error1.txt and error2.txt that contain the placement error for
 
 ## uDance
 Run     
-`bash udance/run.sh -b backbone_seq_file -s sequence_file -l 10000000 -o outdir -t cores -c 15000`
+`bash udance/run.sh -b backbone_tree_file -s sequence_file -l 10000000 -o outdir -t cores -c 15000`
 
 ## DEPP
 ### Installation
