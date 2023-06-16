@@ -1,5 +1,9 @@
 # GG2_scripts
 
+## data
+* data/rt: 200k tree
+* data/aligned_all.filtered.fa.zip: backbone alignment
+
 ## Select a single copy
 To speed up the process, split the sequence file into two files in realtively same size and each ideally contain the same number of genomes.          
 1. run           
