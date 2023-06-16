@@ -16,7 +16,10 @@ Run
 conda env create -f depp_env.yml
 
 ### Prepare
-1. Trim and backbone tree and remove sequences in the backbone sequences so that backbone tree and backbone sequences have the same set of species.
+Run `bash ~/tool/prepare_depp.sh tree_file seq_file outdir`
+
+This will
+1. Trim the backbone tree and remove sequences in the backbone sequences so that backbone tree and backbone sequences have the same set of species.
 2. Make the aligned backbone sequence file to be in four types (full-length, V4, V4 100bp and V4 150bp) by trimming the sequences. Following is the position we used in the previous run for trimming the squences. Those positions are found by aligning the fragments of 16S to the aligned full-length 16S. It would be good to double check that.
 
 * V4 100
@@ -30,6 +33,10 @@ End: 722
 * V4 
 Start: 572
 End: 822
+
+The output will be stored in outdir    
+* backbone_tree: outdir/backbone.nwk
+* backbone_seq: outdir/full_length/backbone.fa, outdir/v4_100/backbone.fa, outdir/v4_150/backbone.fa, outdir/v4/backbone.fa
 
 ### Training
 For each of the backbone sequence type, train a model using the command:    
