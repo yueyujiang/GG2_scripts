@@ -16,7 +16,7 @@ Run
 conda env create -f depp_env.yml
 
 ### Prepare
-Run `bash ~/tool/prepare_depp.sh tree_file seq_file outdir`
+Run `bash scripts/prepare_depp.sh tree_file seq_file outdir`
 
 This will
 1. Trim the backbone tree and remove sequences in the backbone sequences so that backbone tree and backbone sequences have the same set of species.
