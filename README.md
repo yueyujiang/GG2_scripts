@@ -5,7 +5,7 @@ To speed up the process, split the sequence file into two files in realtively sa
 1. run           
 `bash select_copy/select_copy_by_leave_out2.sh tree_file seq_file1 seq_fil2 > error1.txt` and         
 `bash select_copy/select_copy_by_leave_out2.sh tree_file seq_file2 seq_fil1 > error2.txt`,            
-this will give us error1.txt and error2.txt that containing the placement error for all the sequences. Then select the copies with lowest errors among multiple copies. 
+this will give us error1.txt and error2.txt that contain the placement error for all the sequences. Then we can select the copies with lowest errors among multiple copies. 
 
 ## uDance
 Run     
