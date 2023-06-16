@@ -20,19 +20,19 @@ Run `bash scripts/prepare_depp.sh tree_file seq_file outdir`
 
 This will
 1. Trim the backbone tree and remove sequences in the backbone sequences so that backbone tree and backbone sequences have the same set of species.
-2. Make the aligned backbone sequence file to be in four types (full-length, V4, V4 100bp and V4 150bp) by trimming the sequences. Following is the position we used in the previous run for trimming the squences. Those positions are found by aligning the fragments of 16S to the aligned full-length 16S. It would be good to double check that.
+2. Make the aligned backbone sequence file to be in four types (full-length, V4, V4 100bp and V4 150bp) by trimming the sequences. Following is the position (index start from 0) we used in the previous run for trimming the squences. Those positions are found by aligning the fragments of 16S to the aligned full-length 16S. It would be good to double check that.
 
 * V4 100
-start: 572
-End: 672
+start: 571
+End: 669
 
 * V4 150
-Start: 572
-End: 722
+Start: 571
+End: 719
 
 * V4 
-Start: 572
-End: 822
+Start: 571
+End: 819
 
 The output will be stored in outdir    
 * backbone_tree: outdir/backbone.nwk
