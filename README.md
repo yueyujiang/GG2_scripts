@@ -6,12 +6,14 @@
 
 ## Select a single copy
 To speed up the process, split the sequence file into two files in realtively same size and each ideally contain the same number of genomes.          
-1. run           
+1. to calculate placement error in edges run           
 `bash select_copy/select_copy_split.sh tree_file seq_file output_error_file`               
 <!-- This will produce a output_error_file that include the placement errors of the sequences.
 `bash select_copy/select_copy_by_leave_out2.sh tree_file seq_file1 seq_fil2 > error1.txt` and         
 `bash select_copy/select_copy_by_leave_out2.sh tree_file seq_file2 seq_fil1 > error2.txt`,            
 this will give us error1.txt and error2.txt that contain the placement error for all the sequences. Then we can select the copies with lowest errors among multiple copies.  -->
+2. to calculate placement error in path length run         
+`bash select_copy/dist_err_split.sh tree_file seq_file outdir`
 
 ## uDance
 Run     
