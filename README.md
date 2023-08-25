@@ -52,7 +52,10 @@ For each of the backbone sequence type, train a model using the command:
 
 ### Placement
 Do the placement using the following command:    
-`depp-place-rRNA.sh -q query_seq -a accessory_file -o ourdir -x cores`.  
+`depp-place-rRNA.sh -q query_seq -a accessory_file -o ourdir -x cores`.           
+Pretrain accessory_file can be accessed [here](https://drive.google.com/file/d/1E2kW4K05GbYuSGegPNskumB3iIPN2NKU/view?usp=sharing)
+#### Example
+`depp-place-rRNA.sh -q data/test_depp/query0.fa -a accessory_file -o ourdir -x cores`
 
 ## Others
 ### APPLES (placement)
